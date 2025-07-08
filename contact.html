@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us Envelope</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <small>Enter message (optional) and click button "Send"</small>
+
+  <div class="wrapper centered">
+    <article class="letter">
+      <div class="side">
+        <h1>Contact Us</h1>
+        <p>
+          <textarea placeholder="Your message" rows="4"></textarea>
+        </p>
+      </div>
+      <div class="side">
+        <p>
+          <input type="text" placeholder="Your name" required>
+        </p>
+        <p>
+          <input type="email" placeholder="Your email" required>
+        </p>
+        <p>
+          <button id="sendLetter" type="button">Send</button>
+        </p>
+      </div>
+    </article>
+    <div class="envelope front"></div>
+    <div class="envelope back"></div>
+  </div>
+
+  <p class="result-message centered" id="resultMsg">Thank you for your message</p>
+
+  
+</body>
+</html>
+<script>
+    function addClass() {
+  document.body.classList.add("sent");
+}
+
+sendLetter.addEventListener("click", addClass);
+    </script>
+<script>
+    // Optional: handle send button click
+    document.getElementById("sendLetter").addEventListener("click", function () {
+      document.getElementById("resultMsg").style.display = "block";
+    });
+  </script>
