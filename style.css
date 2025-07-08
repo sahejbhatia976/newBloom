@@ -275,7 +275,7 @@
     align-items: center;
     gap: 40px;
     padding: 40px 20px;
-    background: url('https://i.imgur.com/4u1k6di.png') no-repeat center center;
+    background: url("assets/back-categ.jpg") no-repeat center center;
     background-size: cover;
     flex-wrap: wrap;
   }
